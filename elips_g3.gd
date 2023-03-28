@@ -5,9 +5,9 @@ var phabas := 0.0
 var ramo := 0.0
 
 func _process():
-# use with care, may quickly fill video memory!
-#  phabas += _delta
-#  ramo = 0.5*radi*(1.0+sin(phabas))
+
+  phabas += _delta
+  ramo = radi*(1.1+sin(phabas))
   update()
 
 func _draw():
